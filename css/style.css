@@ -79,9 +79,10 @@ nav ul li a {
     -moz-transition: all ease-in 200ms;
     -webkit-transition: all ease-in 200ms;
     padding-bottom: .2em;
+    border-bottom: 2px solid transparent;
 }
 
 nav ul li a:hover {
     color: rgb(0,102,204);
-    border-bottom: 2px solid rgb(0,102,204);
+    border-bottom-color: rgb(0,102,204);
 }
