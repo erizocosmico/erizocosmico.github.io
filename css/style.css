@@ -91,7 +91,7 @@ nav ul li a:after {
     height: 2px;
     width: 0;
     background: rgb(0,102,204);
-    transition: width .3s ease-in;
+    transition: width .2s ease-in-out;
 }
 
 nav ul li a:hover {
