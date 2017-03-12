@@ -82,7 +82,21 @@ nav ul li a {
     border-bottom: 2px solid transparent;
 }
 
+nav ul li a:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: rgb(0,102,204);
+    transition: width .3s ease-in;
+}
+
 nav ul li a:hover {
     color: rgb(0,102,204);
-    border-bottom-color: rgb(0,102,204);
+}
+
+nav ul li a:hover:after {
+    width: 100%;
 }
