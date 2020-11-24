@@ -1,16 +1,16 @@
 html {
-  --accent: rgb(0, 102, 204);
+  --accent-color: rgb(0, 102, 204);
   --text-color: #000;
-  --border-color: rgba(0, 0, 0, 0.2);
+  --normal-link-border-color: rgba(0, 0, 0, 0.2);
 }
 
 ::selection {
-  background-color: var(--accent);
+  background-color: var(--accent-color);
   color: #fff;
 }
 
 -moz-::selection {
-  background-color: var(--accent);
+  background-color: var(--accent-color);
   color: #fff;
 }
 
@@ -35,14 +35,14 @@ a {
   transition: all 250ms ease-in-out;
   font-weight: bold;
   position: relative;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--normal-link-border-color);
 }
 
 a::after {
   content: " ";
   height: 2px;
   width: 0;
-  background-color: var(--accent);
+  background-color: var(--accent-color);
   display: inline-block;
   position: absolute;
   bottom: -2px;
@@ -51,7 +51,7 @@ a::after {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent-color);
   border-bottom-width: 0;
 }
 
