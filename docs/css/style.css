@@ -1,0 +1,118 @@
+html {
+  --accent: rgb(0, 102, 204);
+  --text-color: #000;
+  --border-color: rgba(0, 0, 0, 0.2);
+}
+
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+-moz-::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+body,
+html,
+main {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+  font-weight: bold;
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+}
+
+a::after {
+  content: " ";
+  height: 2px;
+  width: 0;
+  background-color: var(--accent);
+  display: inline-block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: width 200ms ease-in-out;
+}
+
+a:hover {
+  color: var(--accent);
+  border-bottom-width: 0;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  padding: 2rem;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+}
+
+.intro figure {
+  margin-right: 2rem;
+}
+
+.intro figure img {
+  width: 9rem;
+  border-radius: 10px;
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.intro figure img:hover {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.intro h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.intro p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .introduction {
+    flex-direction: column;
+  }
+
+  .intro figure {
+    margin: 0;
+  }
+
+  .intro h1 {
+    text-align: center;
+  }
+}
