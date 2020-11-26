@@ -2,3 +2,7 @@ baseURL = "https://miguel.molina.xyz/"
 languageCode = "en-us"
 title = "Miguel Molina"
 publishDir = "docs"
+pygmentsUseClasses=true
+
+[params]
+description = "Miguel Molina's personal website"

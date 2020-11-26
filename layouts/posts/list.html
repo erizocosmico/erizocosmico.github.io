@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+<div class="posts">
+    <a href="{{.Site.BaseURL}}" class="pill-btn back-btn" title="Back home"><span class="icon">&larr;</span><span>Go back home</span></a>
+    <h1 class="emoji-text"><img class="emoji" src="/img/emoji/write.png" alt="writing hand emoji" /><span>Posts</span></h1>
+
+    <ul class="post-list">
+        {{ range .Pages }}
+        <li>
+            <span class="date">{{.Date.Format "02 Jan 2006"}}</span>
+            <a href="{{.Permalink}}" title="{{.Title}}">{{.Title}}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+{{ partial "footer.html" . }}

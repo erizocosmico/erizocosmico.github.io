@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+
+<div class="post">
+    <a href="{{.Site.BaseURL}}posts/" class="pill-btn back-btn" title="Go back"><span class="icon">&larr;</span><span>Go back</span></a>
+
+    <article>
+        <header>
+            <h1>{{.Title}}</h1>
+
+            <div class="info">
+                <div class="publish-time emoji-text">
+                    <img src="/img/emoji/clock.png" class="emoji" alt="Clock emoji"/>
+                    <span>Posted {{.Date.Format "02 Jan 2006"}}</span>
+                </div>
+                <div class="reading-time emoji-text">
+                    <img src="/img/emoji/eyes.png" class="emoji" alt="Eyes emoji" />
+                    <span>{{.ReadingTime}} minute{{if ne .ReadingTime 1}}s{{end}} reading</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            {{.Content}}
+        </div>
+    </article>
+</div>
+
+{{ partial "footer.html" . }}

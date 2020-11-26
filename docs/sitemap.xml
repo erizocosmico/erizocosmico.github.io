@@ -3,11 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://miguel.molina.xyz/categories/</loc>
+    <loc>https://miguel.molina.xyz/</loc>
+    <lastmod>2020-11-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://miguel.molina.xyz/</loc>
+    <loc>https://miguel.molina.xyz/posts/</loc>
+    <lastmod>2020-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miguel.molina.xyz/posts/other-post/</loc>
+    <lastmod>2020-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miguel.molina.xyz/posts/some-post/</loc>
+    <lastmod>2019-08-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miguel.molina.xyz/categories/</loc>
   </url>
   
   <url>
