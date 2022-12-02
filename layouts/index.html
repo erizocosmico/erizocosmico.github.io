@@ -17,7 +17,7 @@
     {{ if gt (len .Site.RegularPages) 0 }}
     <div class="recent-posts">
         <h1 class="emoji-text"><img class="emoji" src="/img/emoji/write.png" alt="writing hand emoji" /><span>Latest posts</span></h1>
-        
+
         <ul class="post-list">
             {{ range first 5 .Site.RegularPages }}
             <li>
